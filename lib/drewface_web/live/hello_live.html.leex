@@ -1,7 +1,8 @@
 <div class="flex items-center justify-around w-full h-screen bg-black border-none">
-  <div class="w-3/4 rounded-full h-2/3 lg:w-5/12 bg-pink">
+  <div class="w-64 h-64 rounded-full bg-pink">
   </div>
-  <div class="w-3/4 rounded-full h-2/3 lg:w-5/12 bg-baby-blue">
+  <div phx-click="circle_click" class="flex items-center justify-center w-64 h-64 rounded-full <%= @circle_color %>">
+    <%= @hello %>
   </div>
 </div>
 
