@@ -11,16 +11,17 @@
   </head>
   <body>
     <header>
+    <!--
       <section>
         <nav role="navigation" class="flex justify-end p-4 text-blue-500 bg-black border-none">
-          <%= link "H", to: Routes.page_path(@conn, :index), class: "p-4 h-auto bg-yellow rounded-full hover:bg-baby-blue" %>
-          <%# <%= link "Hello!", to: Routes.hello_path(@conn, :hello), class: "mx-2 hover:text-red-500"%>
+          <%= link "H", to: Routes.hello_path(@conn, :index), class: "p-4 h-auto bg-yellow rounded-full hover:bg-baby-blue" %>
           <a href="https://hexdocs.pm/phoenix/overview.html" class="px-2 hover:text-red-500">Get Started</a></li>
           <%= if function_exported?(Routes, :live_dashboard_path, 2) do %>
             <%= link "LiveDashboard", to: Routes.live_dashboard_path(@conn, :home), class: "px-2 hover:text-red-500"%>
           <% end %>
         </nav>
       </section>
+    -->
     </header>
     <%= @inner_content %>
   </body>

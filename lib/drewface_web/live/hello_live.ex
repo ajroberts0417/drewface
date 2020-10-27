@@ -4,7 +4,7 @@ defmodule DrewfaceWeb.HelloLive do
   @impl true
   def mount(_params, _session, socket) do
     # mount will magically render hello_live.html.leex, I think
-    {:ok, assign(socket, :hello, "I love Priya alot")}
+    {:ok, assign(socket, :hello, "Click Me!!")}
   end
 
   @impl true
