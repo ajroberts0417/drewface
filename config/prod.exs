@@ -14,9 +14,7 @@ config :drewface, DrewfaceWeb.Endpoint,
   url: [host: "drewface.gigalixirapp.com" || "localhost", port: 80],
   cache_static_manifest: "priv/static/cache_manifest.json",
   check_origin: [
-    "andrew.show",
     "//andrew.show",
-    "drewface.gigalixirapp.com",
     "//drewface.gigalixirapp.com"
   ]
 
