@@ -11,9 +11,14 @@ use Mix.Config
 # before starting your production server.
 # in production set HOSTNAME="ajroberts0417-drewface.zeet.app"
 config :drewface, DrewfaceWeb.Endpoint,
-  url: [host: System.get_env("HOSTNAME") || "localhost", port: 80],
-  cache_static_manifest: "priv/static/cache_manifest.json"
-  check_origin: ["andrew.show", "drewface.gigalixirapp.com"]
+  url: [host: "drewface.gigalixirapp.com" || "localhost", port: 80],
+  cache_static_manifest: "priv/static/cache_manifest.json",
+  check_origin: [
+    "andrew.show",
+    "//andrew.show",
+    "drewface.gigalixirapp.com",
+    "//drewface.gigalixirapp.com"
+  ]
 
 # Do not print debug messages in production
 config :logger, level: :info
