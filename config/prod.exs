@@ -13,6 +13,7 @@ use Mix.Config
 config :drewface, DrewfaceWeb.Endpoint,
   url: [host: System.get_env("HOSTNAME") || "localhost", port: 80],
   cache_static_manifest: "priv/static/cache_manifest.json"
+  check_origin: ["andrew.show", "drewface.gigalixirapp.com"]
 
 # Do not print debug messages in production
 config :logger, level: :info
