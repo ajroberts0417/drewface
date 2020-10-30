@@ -16,15 +16,16 @@ config :drewface, DrewfaceWeb.Endpoint,
   check_origin: [
     "//andrew.show",
     "//drewface.gigalixirapp.com"
-  ]
+  ],
   force_ssl: [rewrite_on: [:x_forwarded_proto]]
-  # https: [
-  #   port: 443,
-  #   cipher_suite: :strong,
-  #   keyfile: System.get_env("SOME_APP_SSL_KEY_PATH"),
-  #   certfile: System.get_env("SOME_APP_SSL_CERT_PATH"),
-  #   transport_options: [socket_opts: [:inet6]]
-  # ]
+
+# https: [
+#   port: 443,
+#   cipher_suite: :strong,
+#   keyfile: System.get_env("SOME_APP_SSL_KEY_PATH"),
+#   certfile: System.get_env("SOME_APP_SSL_CERT_PATH"),
+#   transport_options: [socket_opts: [:inet6]]
+# ]
 
 # Do not print debug messages in production
 config :logger, level: :info
