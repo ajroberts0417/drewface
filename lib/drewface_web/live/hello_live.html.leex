@@ -1,8 +1,8 @@
-<div class="flex items-center justify-around w-full h-screen bg-black border-none">
-  <div class="w-64 h-64 rounded-full bg-pink">
-  </div>
-  <div phx-click="circle_click" class="flex items-center justify-center w-64 h-64 rounded-full <%= @circle_color %>">
-    <%= @hello %>
+<div class="flex flex-col items-center justify-center w-full h-full bg-black border-none">
+  <div class="w-64">
+  <%= for {_id, circle} <- @circles do %>
+    <div id="circle-<%=circle.id%>" phx-click="circle_click" phx-value-circleid="<%= circle.id %>" phx-value-circlecreate="<%= circle.create %>" phx-value-circlecolor="<%= circle.color %>" class="circle <%= circle.color %>"></div>
+  <% end %>
   </div>
 </div>
 
