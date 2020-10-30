@@ -15,7 +15,9 @@ config :drewface, DrewfaceWeb.Endpoint,
   cache_static_manifest: "priv/static/cache_manifest.json",
   check_origin: [
     "//andrew.show",
-    "//drewface.gigalixirapp.com"
+    "//drewface.gigalixirapp.com",
+    "https://ajroberts0417-drewface.zeet.app",
+    "//ajroberts0417-drewface.zeet.app"
   ],
   force_ssl: [rewrite_on: [:x_forwarded_proto]]
 
